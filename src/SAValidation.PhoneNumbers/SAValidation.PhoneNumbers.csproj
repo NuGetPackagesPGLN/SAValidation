@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SAValidation.Common\SAValidation.Common.csproj" />
+      <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
