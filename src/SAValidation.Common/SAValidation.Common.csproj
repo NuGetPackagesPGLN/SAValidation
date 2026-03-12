@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-//
+
   <!-- Package metadata for NuGet -->
   <PropertyGroup>
     <Version>1.0.3</Version>

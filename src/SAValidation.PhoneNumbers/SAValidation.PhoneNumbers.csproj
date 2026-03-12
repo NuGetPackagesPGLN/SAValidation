@@ -1,6 +1,6 @@
 ﻿<!-- src/SAValidation.PhoneNumbers/SAValidation.PhoneNumbers.csproj -->
 <Project Sdk="Microsoft.NET.Sdk">
-//
+
   <PropertyGroup>
     <Version>1.0.3</Version>
     <Description>South African phone number validation library</Description>
