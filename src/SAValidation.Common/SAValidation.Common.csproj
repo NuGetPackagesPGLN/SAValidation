@@ -3,6 +3,7 @@
   <!-- Package metadata for NuGet -->
   <PropertyGroup>
     <Version>1.0.4</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>Common utilities for South African validation libraries</Description>
     <PackageTags>south-africa;common;utilities;validation</PackageTags>
   </PropertyGroup>

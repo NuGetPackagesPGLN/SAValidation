@@ -3,6 +3,7 @@
 
   <PropertyGroup>
     <Version>1.0.4</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>South African phone number validation library</Description>
     <PackageTags>south-africa;phone;validation;mobile;vodacom;mtn;cellc;telkom;neotel;landline;tollfree;premium</PackageTags>
   </PropertyGroup>
