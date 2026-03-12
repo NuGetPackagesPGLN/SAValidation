@@ -71,7 +71,7 @@ public class StringExtensionsTests
     [InlineData("0825551234", 0, 3, "082")]
     [InlineData("0825551234", 3, 3, "555")]
     [InlineData("0825551234", 10, 3, "")]
-    [InlineData("0825551234", 8, 10, "234")]
+    [InlineData("0825551234", 8, 10, "34")]
     public void SafeSubstring_ShouldHandleBounds(string input, int start, int length, string expected)
     {
         // Act
