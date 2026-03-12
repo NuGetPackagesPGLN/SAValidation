@@ -1,8 +1,4 @@
-# 📝 **Concise and Readable README.md**
 
-Save this as `README.md` in your repository root:
-
-```markdown
 # SAValidation
 
 South African validation library for phone numbers, ID numbers, VAT, and more.
