@@ -34,4 +34,4 @@ jobs:
     
     - name: Publish to NuGet
       run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json
-     
+      
