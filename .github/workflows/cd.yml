@@ -13,10 +13,10 @@ jobs:
       id-token: write  # Required for Trusted Publishing
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4  # Updated to v4 (fixes Node.js warning)
     
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4  # Updated to v4
       with:
         dotnet-version: 8.0.x
     
@@ -33,5 +33,5 @@ jobs:
       run: dotnet pack --configuration Release --no-build --output ./nupkg
     
     - name: Publish to NuGet
-      run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json
-      
+      run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json --api-key AzureDevOps
+      # --api-key AzureDevOps is the magic that enables Trusted Publishing!
