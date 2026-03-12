@@ -5,5 +5,6 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/SAValidation.Common.Tests/SAValidation.Common.Tests.csproj" />
+    <Project Path="tests/SAValidation.PhoneNumbers.Tests/SAValidation.PhoneNumbers.Tests.csproj" />
   </Folder>
 </Solution>
