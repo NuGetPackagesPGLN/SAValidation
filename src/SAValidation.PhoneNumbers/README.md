@@ -1,15 +1,13 @@
-﻿# SAValidation.PhoneNumbers
+# SAValidation.PhoneNumbers
 
 South African phone number validation library.
 
-NuGet: https://www.nuget.org/packages/SAValidation.PhoneNumbers/  
+NuGet: https://www.nuget.org/packages/SAValidation.PhoneNumbers/
 GitHub: https://github.com/NuGetPackagesPGLN/SAValidation
 
 ## Installation
 
-  ash
 dotnet add package SAValidation.PhoneNumbers
-  
 
 ## Features
 
@@ -43,7 +41,6 @@ dotnet add package SAValidation.PhoneNumbers
 
 ## Quick Usage
 
-  csharp
 using SAValidation.PhoneNumbers;
 
 // Simple validation
@@ -58,13 +55,11 @@ if (result.IsValid)
     Console.WriteLine($"Operator: {result.Operator}");      // Vodacom
     Console.WriteLine($"Normalized: {result.NormalizedNumber}"); // +27825551234
 }
-  
 
 ## Detailed Examples
 
 ### Mobile Number Detection
 
-  csharp
 // Vodacom
 var vodacom = "0825551234".ValidateSouthAfricanPhoneNumber();
 Console.WriteLine(vodacom.Operator); // Vodacom
@@ -76,11 +71,9 @@ Console.WriteLine(mtn.Operator); // MTN
 // Cell C
 var cellc = "0845551234".ValidateSouthAfricanPhoneNumber();
 Console.WriteLine(cellc.Operator); // CellC
-  
 
 ### Landline Area Detection
 
-  csharp
 var jhb = "0115551234".ValidateSouthAfricanPhoneNumber();
 Console.WriteLine(jhb.AreaDescription); // Johannesburg & Gauteng
 
@@ -89,11 +82,9 @@ Console.WriteLine(cpt.AreaDescription); // Cape Town & Winelands
 
 var durban = "0315551234".ValidateSouthAfricanPhoneNumber();
 Console.WriteLine(durban.AreaDescription); // Durban & eThekwini
-  
 
 ### Different Input Formats
 
-  csharp
 // All these return the same normalized result: +27825551234
 var formats = new[]
 {
@@ -109,11 +100,9 @@ foreach (var format in formats)
     var result = format.ValidateSouthAfricanPhoneNumber();
     Console.WriteLine($"{format} -> {result.NormalizedNumber}");
 }
-  
 
 ### Special Numbers
 
-  csharp
 // Toll-Free
 var tollFree = "0800123456".ValidateSouthAfricanPhoneNumber();
 Console.WriteLine(tollFree.NumberType); // TollFree
@@ -125,7 +114,6 @@ Console.WriteLine(premium.NumberType); // Premium
 // Emergency
 var emergency = "10111".ValidateSouthAfricanPhoneNumber();
 Console.WriteLine(emergency.NumberType); // Emergency
-  
 
 ## API Reference
 
@@ -159,13 +147,11 @@ Console.WriteLine(emergency.NumberType); // Emergency
 
 ## Error Handling
 
-  csharp
 var invalid = "123".ValidateSouthAfricanPhoneNumber();
 if (!invalid.IsValid)
 {
     Console.WriteLine(invalid.ErrorMessage); // "Invalid length: SA numbers should be 9-11 digits (got 3)"
 }
-  
 
 ## Contributing
 
