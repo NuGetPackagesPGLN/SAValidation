@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SAValidation.Common/SAValidation.Common.csproj" />
+    <Project Path="src/SAValidation.PhoneNumbers/SAValidation.PhoneNumbers.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SAValidation.Common.Tests/SAValidation.Common.Tests.csproj" />
+  </Folder>
+</Solution>

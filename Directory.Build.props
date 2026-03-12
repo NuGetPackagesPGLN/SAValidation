@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    
+    <!-- Common package metadata -->
+    <Authors>Nkosinathi Tshabalala</Authors>
+    <Company>PGLN</Company>
+    <Copyright>Copyright $([System.DateTime]::Now.Year) Nkosinathi Tshabalala</Copyright>
+    <PackageProjectUrl>https://github.com/NuGetPackagesPGLN/SAValidation.git</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NuGetPackagesPGLN/SAValidation.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>south-africa;validation;sa;phone;id;vat;postal-code</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    
+    <!-- Generate XML documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+</Project>
